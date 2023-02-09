@@ -19,49 +19,6 @@
                 0.9999998
             ]
         },
-        "15": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                4.0,
-                                0.05,
-                                4.0
-                            ]
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                1.1920928955078125e-7
-            ],
-            "rotation": [
-                -0.7072496,
-                0.0,
-                0.0,
-                0.7069638
-            ],
-            "scale": [
-                4.0,
-                4.0,
-                4.0
-            ]
-        },
         "16": {
             "name": "Cube",
             "components": [
@@ -71,12 +28,32 @@
                         "mesh": "8",
                         "material": "22"
                     }
+                },
+                {
+                    "type": "setMeshLocation",
+                    "setMeshLocation": {
+                        "eyeLeft": "18"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                3.0,
+                                3.0,
+                                0.1
+                            ]
+                        },
+                        "groups": 64
+                    }
                 }
             ],
             "translation": [
-                2.9802322387695313e-8,
+                2.3690111,
                 0.4999999,
-                5.960464477539063e-8
+                -2.0492241
             ],
             "rotation": [
                 0.0,
@@ -85,9 +62,9 @@
                 1.0
             ],
             "scale": [
-                0.5,
-                0.5,
-                0.5
+                3.0,
+                3.0,
+                0.1
             ]
         },
         "17": {
@@ -140,6 +117,12 @@
                 },
                 {
                     "type": "howler-audio-listener"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 6
+                    }
                 }
             ],
             "translation": [
@@ -242,62 +225,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                1.5,
-                1.0,
-                -1.4901161193847656e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.4999999,
-                0.75,
-                -1.25
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.75,
-                0.75,
-                0.75
             ]
         },
         "53": {
@@ -503,13 +430,6 @@
                 "file": "models\\oculus-touch-v2-left.glb"
             },
             "parent": "53"
-        },
-        "79": {
-            "link": {
-                "name": "trigger<xr_standard_trigger_pressed_value<root",
-                "file": "models\\oculus-touch-v2-left.glb"
-            },
-            "parent": "78"
         },
         "80": {
             "link": {
@@ -1011,21 +931,6 @@
                 1.0
             ]
         },
-        "135": {
-            "link": {
-                "name": "l_handMeshNode<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "134",
-            "components": [
-                {
-                    "active": true,
-                    "mesh": {
-                        "skin": "133"
-                    }
-                }
-            ]
-        },
         "136": {
             "link": {
                 "name": "xr_standard_trigger_pressed_max<Armature",
@@ -1300,20 +1205,6 @@
                 1.0
             ]
         },
-        "168": {
-            "link": {
-                "name": "r_handMeshNode<Armature",
-                "file": "models\\hand-right.glb"
-            },
-            "parent": "167",
-            "components": [
-                {
-                    "mesh": {
-                        "skin": "166"
-                    }
-                }
-            ]
-        },
         "169": {
             "link": {
                 "name": "wrist<Armature",
@@ -1528,168 +1419,6 @@
             "parent": "167",
             "skin": "166"
         },
-        "194": {
-            "name": "Panel",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
-                    }
-                }
-            ],
-            "translation": [
-                -2.5,
-                1.2,
-                0.0
-            ],
-            "rotation": [
-                0.5002117,
-                0.0,
-                0.0,
-                0.8659031
-            ],
-            "scale": [
-                0.25,
-                0.1249998,
-                0.2499998
-            ]
-        },
-        "196": {
-            "link": {
-                "name": "Cube",
-                "file": "models\\button.glb"
-            },
-            "parent": "197",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "26"
-                    }
-                }
-            ],
-            "name": "ButtonMesh",
-            "translation": [
-                -0.0000094,
-                0.3244419,
-                -0.0000676
-            ],
-            "rotation": [
-                6.000006465001206e-7,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                0.9999989,
-                0.9999989
-            ]
-        },
-        "197": {
-            "name": "Button",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                0.0974999,
-                                0.025,
-                                0.045
-                            ]
-                        },
-                        "groups": 251
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "button",
-                    "button": {
-                        "buttonMeshObject": "196",
-                        "hoverMaterial": "203"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.057682,
-                0.175434
-            ],
-            "rotation": [
-                -0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.4,
-                0.4999999,
-                0.3
-            ]
-        },
-        "198": {
-            "name": "ButtonLabel",
-            "parent": "196",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Thanks!"
-                    }
-                }
-            ],
-            "translation": [
-                -0.0001563,
-                0.1084579,
-                0.0000046
-            ],
-            "rotation": [
-                -0.7068095,
-                0.0,
-                0.0,
-                0.7074038
-            ],
-            "scale": [
-                2.5,
-                3.7999999,
-                4.8000063
-            ]
-        },
-        "200": {
-            "name": "Title",
-            "parent": "194",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Welcome to\nWonderland",
-                        "material": "201"
-                    }
-                }
-            ],
-            "translation": [
-                -0.0000023,
-                0.1554993,
-                -0.303415
-            ],
-            "rotation": [
-                -0.7068591,
-                0.0,
-                0.0,
-                0.7073543
-            ],
-            "scale": [
-                1.5,
-                3.0000002,
-                1.5000001
-            ]
-        },
         "205": {
             "name": "TrackedSpace",
             "parent": "14",
@@ -1702,28 +1431,6 @@
                 0.0,
                 1.75,
                 0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "208": {
-            "link": {
-                "name": "TeleportIndicator",
-                "file": "models\\teleport-indicator.glb"
-            },
-            "translation": [
-                0.0,
-                0.0099999,
-                1.3311299
             ],
             "rotation": [
                 0.0,
@@ -1911,6 +1618,42 @@
                 0.0099999,
                 0.0099999,
                 0.0099999
+            ]
+        },
+        "79": {
+            "link": {
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "78"
+        },
+        "135": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "134",
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "skin": "133"
+                    }
+                }
+            ]
+        },
+        "168": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "167",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "166"
+                    }
+                }
             ]
         }
     },
