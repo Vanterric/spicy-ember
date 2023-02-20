@@ -51,7 +51,7 @@
                 }
             ],
             "translation": [
-                2.3690111,
+                -1.893718,
                 0.4999999,
                 -2.0492241
             ],
@@ -81,7 +81,9 @@
                     "type": "cursor",
                     "cursor": {
                         "collisionGroup": 0,
-                        "handedness": "none"
+                        "handedness": "none",
+                        "cursorRayObject": "235",
+                        "cursorObject": "215"
                     }
                 }
             ],
@@ -121,7 +123,15 @@
                 {
                     "type": "cursor",
                     "cursor": {
-                        "collisionGroup": 6
+                        "collisionGroup": 6,
+                        "cursorRayObject": "233",
+                        "cursorObject": "215"
+                    }
+                },
+                {
+                    "type": "moveFlame",
+                    "moveFlame": {
+                        "flame": "237"
                     }
                 }
             ],
@@ -715,18 +725,6 @@
                     "type": "input",
                     "input": {
                         "type": "ray left"
-                    }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
                     }
                 }
             ],
@@ -1511,18 +1509,6 @@
                     "input": {
                         "type": "ray right"
                     }
-                },
-                {
-                    "type": "teleport",
-                    "teleport": {
-                        "floorGroup": 2,
-                        "camRoot": "14",
-                        "cam": "17",
-                        "teleportIndicatorMeshObject": "208",
-                        "indicatorYOffset": 0.0099999,
-                        "eyeLeft": "18",
-                        "eyeRight": "19"
-                    }
                 }
             ],
             "translation": [
@@ -1654,6 +1640,121 @@
                         "skin": "166"
                     }
                 }
+            ]
+        },
+        "233": {
+            "name": "CursorRayRight",
+            "parent": "18",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "234": {
+            "name": "CuresorRayMeshRight",
+            "parent": "233",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.7072796,
+                0.0,
+                0.0,
+                0.7069339
+            ],
+            "scale": [
+                0.0049998,
+                0.3499999,
+                0.0049999
+            ]
+        },
+        "235": {
+            "name": "CursorRayRight",
+            "parent": "17",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "236": {
+            "name": "CuresorRayMeshRight",
+            "parent": "235",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "128"
+                    }
+                }
+            ],
+            "translation": [
+                2.384185791015625e-7,
+                0.0002447,
+                0.0
+            ],
+            "rotation": [
+                0.7072796,
+                0.0,
+                0.0,
+                0.7069339
+            ],
+            "scale": [
+                0.0049998,
+                0.3499999,
+                0.0049999
+            ]
+        },
+        "237": {
+            "name": "Mesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "scale": [
+                0.5,
+                0.5,
+                0.5
             ]
         }
     },
@@ -2239,6 +2340,9 @@
                     "local-floor": true
                 }
             }
+        },
+        "physx": {
+            "enable": true
         }
     },
     "animations": {},
